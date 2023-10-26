@@ -1,1 +1,1 @@
-images/blob.svg filter=lfs diff=lfs merge=lfs -text
+images/blob-bg.svg filter=lfs diff=lfs merge=lfs -text
