@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Web Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image" href="images/favicon.svg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- DEVICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar fixed-top bg-body-tertiary">
+      <div class="container flex-row ">
+        <a href="#" class="navbar-brand logo order-0"></a>
+
+        <button
+          class="navbar-toggler d-sm-block d-md-none order-last"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-md-none">
+          <div
+            class="offcanvas offcanvas-end w-50"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn-close mt-3"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-center fw-bold 3">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#landing">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tools">Tools</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="d-none d-md-flex navbar-nav flex-row gap-4 fw-bold">
+          <li class="nav-item flex-row">
+            <a class="nav-link" href="#landing">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tools">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="landing" class="vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="order-2 order-md-1 col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center animate__animated animate__fadeIn"
+          >
+            <h3>
+              Hey There
+              <i class="fa-regular fa-hand fa-shake fa-lg"></i>,
+            </h3>
+            <h2 class="fw-bold">I'm Cristina.</h2>
+            <h1 class="fw-bold">Full Stack Web Developer</h1>
+            <p class="mt-2 mb-5 fw-semibold">
+              As a full-stack developer with a strong foundation in marketing, I
+              bring a unique blend of technical expertise and a deep
+              understanding of customer engagement strategies to the table. With
+              a passion for crafting innovative web solutions and a background
+              in marketing, I excel in creating user-centric applications that
+              seamlessly bridge the gap between technology and audience
+              engagement.
+            </p>
+          </div>
+          <div
+            class="order-1 order-md-2 col-12 col-md-6 col-lg-5 position-relative justify-content-center d-flex overflow-hidden landing-image__xl"
+          >
+            <img src="images/blob.svg" alt="SVG Blob Imag" class="" />
+            <img
+              src="images/me.png"
+              alt="My Image"
+              class="overlay-image rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container-fluid pt-5">
+        <div class="row gap-5 gap-md-4 gap-lg-0 d-flex justify-content-center">
+          <h1 class="fw-bold my-5 text-center">MY PROJECTS</h1>
+
+          <div class="col-12 col-lg-4 justify-content-center d-flex">
+            <div class="card">
+              <div class="card-1__project">
+                <iframe
+                  src="http://sushi-favoriteko-app.vercel.app/"
+                  frameborder="0"
+                  scrolling="no"
+                  class="w-100 h-100"
+                ></iframe>
+              </div>
+              <div class="card-2 px-3">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="mb-0 mt-3">Sushiman App</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    <h5>HTML & CSS</h5>
+                  </div>
+                </div>
+
+                <div class="row mt-1">
+                  <div class="col-6">
+                    <a
+                      class="btn btn-outline-success"
+                      href="http://sushi-favoriteko-app.vercel.app/"
+                      target="_blank"
+                    >
+                      VIEW
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 justify-content-center d-flex">
+            <div class="card">
+              <div class="card-1 animate-pulse"></div>
+              <div class="card-2 p-3">
+                <div class="row">
+                  <div class="col-10">
+                    <h5>UPCOMING PROJECT</h5>
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-8">
+                    <div class="inner-card animate-pulse"></div>
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-5">
+                    <div class="inner-card animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 justify-content-center d-flex">
+            <div class="card">
+              <div class="card-1 animate-pulse"></div>
+              <div class="card-2 p-3">
+                <div class="row">
+                  <div class="col-10">
+                    <h5 class="">UPCOMING PROJECT</h5>
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-8">
+                    <div class="inner-card animate-pulse"></div>
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-5">
+                    <div class="inner-card animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="vh-100 d-flex align-items-center">
+      <div class="container-fluid bg-danger-subtle pb-md-5">
+        <h2 class="fw-bold text-center mt-lg-5">
+          Tools <i class="fa-solid fa-gear fa-spin fa-xl text-dark"></i>
+        </h2>
+        <div class="row gap-5 justify-content-center d-flex text-center">
+          <div class="col-11 col-lg-5 px-md-5 px-lg-0">
+            <div class="glass-card">
+              <h2 class="text-info m-0">Learned Tools</h2>
+              <div
+                class="d-flex gap-3 py-5 justify-content-center align-items-center h-100"
+              >
+                <i class="fa-brands fa-html5 fa-bounce fa-2xl text-danger"></i>
+                <i class="fa-brands fa-css3 fa-bounce fa-2xl text-primary"></i>
+                <i class="devicon-bootstrap-plain colored fa-bounce fa-2xl"></i>
+                <i class="fa-brands fa-git fa-bounce fa-2xl text-danger"></i>
+
+                <i class="devicon-vscode-plain colored fa-bounce fa-2xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-lg-5 px-md-5 px-lg-0">
+            <div class="glass-card">
+              <h2 class="text-info">Upcoming Tools</h2>
+              <div
+                class="d-flex gap-3 py-5 justify-content-center align-items-center h-100"
+              >
+                <i class="fa-brands fa-js fa-bounce fa-2xl text-warning"></i>
+                <i class="fa-brands fa-react fa-bounce fa-2xl text-primary"></i>
+
+                <i class="fa-brands fa-node fa-bounce fa-2xl text-success"></i>
+
+                <i
+                  class="devicon-express-original colored fa-bounce fa-2xl"
+                ></i>
+                <i
+                  class="devicon-mongodb-plain-wordmark fa-bounce colored fa-2xl"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="d-flex justify-content-center align-items-center position-relative"
+    >
+      <div class="container pt-lg-1 pb-5 ">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="contact-card py-3 px-5">
+              <h3 class="pb-2">Get In Touch</h3>
+              <form method="dialog">
+                <div class="pb-3">
+                  <label for="full-name" class="text-light">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    class="form-control"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div class="pb-3">
+                  <label for="email" class="text-light">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="pb-4">
+                  <label for="message" class="text-light">Message</label>
+                  <textarea
+                    id="message"
+                    class="form-control"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="reset" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid footer d-flex gap-1 flex-wrap position-absolute bottom-0 justify-content-center align-items-center"
+      >
+        <ul
+          class="d-flex list-unstyled justify-content-center gap-5 align-items-center pt-lg-2"
+        >
+          <li class="text-center">
+            <a
+              href="https://www.facebook.com/cristinahermosura.16"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook text-primary"></i>
+            </a>
+          </li>
+          <li class="text-center">
+            <a
+              href="https://www.linkedin.com/in/ma-cristina-hermosura-1aa516273/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin text-primary"></i>
+            </a>
+          </li>
+          <li class="text-center">
+            <a href="https://www.instagram.com/tinarrific_/" target="_blank">
+              <i class="fa-brands fa-instagram text-danger"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0376c99a93.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap 5) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

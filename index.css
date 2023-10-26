@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@800&family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --light-color: #FFF;
+  --dark-color: #000;
+  --green-color: #7ac7a1;
+  --red-color: #ec5555;
+  --transition: 0.6s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+  background: -webkit-radial-gradient(circle, #eeeeee 0%, #d7d7d7 100%);
+  background: radial-gradient(circle, #eeeeee 0%, #d7d7d7 100%);
+}
+
+/* NAVBAR CSS STARTS HERE */
+
+.logo::before {
+  font-family: "Cairo Play", sans-serif;
+  content: "<Tin.DEV />";
+  font-size: 2.5rem;
+  color: var(--dark-color);
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-link {
+  padding: 0;
+  position: relative;
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+
+.nav-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+}
+
+.nav-link:hover {
+  color: var(--dark-color);
+}
+.nav-link:hover::before {
+  width: 100%;
+  transition: var(--transition);
+}
+
+/* NAVBAR CSS ENDS HERE */
+
+/* LANDING STARTS HERE */
+
+h3 {
+  color: var(--green-color) !important;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: scale(1.4);
+  width: 50%;
+}
+
+/* LANDING ENDS HERE */
+
+/* PROJECT CSS STARTS HERE */
+
+#projects {
+  padding: 2.5rem 2.5rem 10rem 2.5rem;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.card {
+  border: none;
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inner-card {
+  height: 20px;
+  background-color: #eee;
+}
+
+.card-1__project {
+  height: 200px;
+}
+
+.card-1 {
+  height: 200px;
+  background-color: #dfdbdb;
+}
+
+.card-2 {
+  height: 150px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* PROJECT CSS ENDS HERE */
+
+/* TOOLS CSS START HERE */
+
+#tools > div:first-child {
+  height: 100vh;
+}
+#tools > div > h2:first-child {
+  padding: 15vh 0vw 10vh 0vw;
+  font-size: 2.5rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.301);
+  border: 1px solid rgba(255, 255, 255, 0.483);
+  backdrop-filter: blur(50px);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 30vh;
+}
+
+/* TOOLS CSS ENDS HERE */
+
+/* CONTACT CSS START HERE */
+
+#contact {
+  height: 90vh;
+}
+
+.fa-5xl {
+  font-size: 3rem;
+}
+
+.footer {
+  background: var(--light-color);
+  height: 10vh;
+}
+
+.footer i {
+  font-size: 3rem;
+}
+
+/* CONTACT CSS ENDS HERE */
+
+.p-10 {
+  padding: 10rem 0;
+}
+
+.contact-card {
+  background: #f5f5f5;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px var(--light-color);
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px var(--light-color);
+}
+
+.contact-card {
+  background: #1c1c1c;
+  box-shadow: 5px 5px 10px var(--dark-color), -3px -3px 8px #262626;
+}
+
+.contact-card:hover {
+  box-shadow: 6px 6px 12px var(--dark-color), -4px -4px 10px #262626;
+}
+
+.form-card {
+  color: var(--light-color);
+}
+
+/* Media query customization */
+
+@media (min-width: 1200px) {
+  .landing-image__xl img:first-child {
+    width: 600px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer i {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+      }
+  }
+
+@media (max-width: 992px) {
+  .overlay-image {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: scale(1.4);
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .overlay-image {
+    position: absolute;
+    top: 25%;
+    left: 32.5%;
+    width: 35%;
+  }
+  .landing-image__xl img:first-child {
+    width: 350px;
+  }
+
+  .navbar-toggler {
+    display: block; 
+  }
+
+  .nav-link:hover::before {
+    width: 75%;
+    transition: var(--transition);
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    display: none; 
+  }
+
+  .navbar-toggler[aria-expanded="false"] {
+    display: block;
+  }
+
+  .logo::before {
+    font-size: 1.5rem;
+  }
+
+  #landing {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing-image__xl img:first-child {
+    width: 300px;
+  }
+}
